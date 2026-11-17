@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#171714">
+<title>مطعم | تجربة بطعم مختلف</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=Amiri:wght@400;700&display=swap');
+:root{--dark:#171714;--dark2:#22211d;--cream:#f4eee3;--gold:#c5a36a;--muted:#b9b0a1;--line:rgba(197,163,106,.25)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--dark);color:var(--cream);font-family:'Alexandria',sans-serif;line-height:1.9}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,90%);margin:auto}
+header{position:absolute;top:0;left:0;width:100%;z-index:5;border-bottom:1px solid rgba(255,255,255,.12)}.nav{height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-size:23px;font-weight:700;letter-spacing:.5px}.brand span{color:var(--gold)}nav{display:flex;gap:30px;color:#e3dbce;font-size:13px}nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 23px;border:1px solid var(--gold);color:var(--dark);background:var(--gold);font-size:13px;font-weight:700;transition:.25s}.btn:hover{background:transparent;color:var(--gold)}.btn.ghost{background:transparent;color:var(--cream);border-color:rgba(255,255,255,.35)}.btn.ghost:hover{border-color:var(--gold);color:var(--gold)}
+.hero{min-height:690px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(15,15,13,.95) 0%,rgba(15,15,13,.84) 48%,rgba(15,15,13,.55) 100%),url('') center/cover,#26231d}.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 78% 50%,rgba(197,163,106,.14),transparent 45%);pointer-events:none}.hero-inner{position:relative;z-index:1;padding-top:90px;max-width:720px}.kicker{color:var(--gold);font-size:12px;letter-spacing:3px;font-weight:600}.hero h1{font-size:clamp(42px,7vw,78px);line-height:1.35;margin:17px 0 16px;font-weight:600}.hero h1 span{color:var(--gold)}.hero p{max-width:520px;color:#c8c0b4;font-size:15px;margin:0 0 30px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-photo{position:absolute;left:5%;bottom:8%;width:270px;height:190px;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;color:#b9a989;font-size:13px;background:rgba(255,255,255,.025)}.hero-photo:before{content:"";position:absolute;inset:9px;border:1px dashed rgba(197,163,106,.35)}
+.section{padding:90px 0}.intro{text-align:center;max-width:760px;margin:auto}.eyebrow{font-size:11px;letter-spacing:2px;color:var(--gold);font-weight:600}.intro h2,.contact h2{font-size:clamp(28px,4vw,42px);font-weight:500;margin:12px 0}.intro p{color:var(--muted);font-size:14px;margin:0 auto;max-width:610px}
+.gallery-section{background:var(--cream);color:var(--dark)}.gallery-section .intro p{color:#746c60}.gallery{display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-rows:220px 220px;gap:14px;margin-top:42px}.shot{border:1px dashed #b9a989;background:#e9dfcf;color:#85765f;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:7px;font-size:13px;position:relative}.shot:first-child{grid-row:span 2}.shot b{font-size:28px;font-weight:300}
+.contact{background:var(--dark2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.contact h2{margin:10px 0}.contact p{color:var(--muted);font-size:14px}.contact-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.details{border-right:1px solid var(--line);padding-right:35px}.detail{padding:13px 0;border-bottom:1px solid var(--line)}.detail small{display:block;color:var(--gold);font-size:11px}.detail strong{font-size:14px;font-weight:500}
+.mapline{margin-top:18px;display:flex;justify-content:space-between;align-items:center;gap:15px;padding:20px 0;border-top:1px solid var(--line)}.mapline span{font-size:13px;color:var(--muted)}
+footer{padding:25px 0;color:#8d8579;font-size:11px;text-align:center}
+@media(max-width:760px){.nav{height:75px}nav{display:none}.hero{min-height:650px}.hero-photo{position:relative;left:auto;bottom:auto;width:100%;height:150px;margin-top:38px}.hero-inner{padding-top:115px}.hero h1{font-size:47px}.section{padding:65px 0}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px 180px}.shot:first-child{grid-row:auto;grid-column:span 2}.contact-grid{grid-template-columns:1fr;gap:25px}.details{border-right:0;border-top:1px solid var(--line);padding:18px 0 0}.mapline{align-items:flex-start;flex-direction:column}}
+@media(max-width:420px){.brand{font-size:19px}.btn{padding:12px 16px}.hero h1{font-size:40px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="brand" href="#">مطعم <span>ــــ</span></a>
+<nav><a href="#story">عن المطعم</a><a href="#gallery">معرض الصور</a><a href="#contact">التواصل والموقع</a></nav>
+<a class="btn" href="https://wa.me/966533279228" target="_blank" rel="noopener">الطلب عبر واتساب</a>
+</div></header>
+
+<main>
+<section class="hero">
+<div class="wrap">
+<div class="hero-inner">
+<div class="kicker">أهلاً بكم</div>
+<h1>نكهة أصيلة،<br><span>وتفاصيل تستحق التجربة.</span></h1>
+<p>نرحب بكم في مطعمنا. اكتشفوا أجواءنا، تعرّفوا على موقعنا، واطلبوا بكل سهولة عبر الواتساب.</p>
+<div class="actions">
+<a class="btn" href="https://wa.me/966533279228" target="_blank" rel="noopener">اطلب الآن</a>
+<a class="btn ghost" href="#gallery">استكشف المطعم</a>
+</div>
+<div class="hero-photo">مساحة الصورة الرئيسية<br>أضف صورة مميزة للمطعم</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="story">
+<div class="wrap intro">
+<div class="eyebrow">حياكم الله</div>
+<h2>مكان يجمع الذوق والكرم</h2>
+<p>نسعد بزيارتكم وطلبكم، ونتطلع دائماً إلى تقديم تجربة تليق بكم. زورونا أو تواصلوا معنا للطلب والاستفسار.</p>
+</div>
+</section>
+
+<section class="section gallery-section" id="gallery">
+<div class="wrap">
+<div class="intro">
+<div class="eyebrow">من أجوائنا</div>
+<h2>معرض الصور</h2>
+<p>لقطات من المطعم والأطباق — ستُضاف الصور هنا.</p>
+</div>
+<div class="gallery">
+<div class="shot"><b>＋</b>الصورة الرئيسية للمحل</div>
+<div class="shot"><b>＋</b>صورة المطعم ٢</div>
+<div class="shot"><b>＋</b>صورة الأطباق ١</div>
+<div class="shot"><b>＋</b>صورة المطعم ٣</div>
+<div class="shot"><b>＋</b>صورة الأطباق ٢</div>
+</div>
+</div>
+</section>
+
+<section class="section contact" id="contact">
+<div class="wrap contact-grid">
+<div>
+<div class="eyebrow">نسعد بتواصلكم</div>
+<h2>طلبكم أقرب مما تتوقعون.</h2>
+<p>للطلب والاستفسار، يمكنكم التواصل معنا مباشرة عبر الواتساب أو الاتصال.</p>
+<div class="contact-links">
+<a class="btn" href="https://wa.me/966533279228" target="_blank" rel="noopener">الطلب عبر واتساب</a>
+<a class="btn ghost" href="tel:+966533279228">اتصال هاتفي</a>
+</div>
+</div>
+<div class="details">
+<div class="detail"><small>رقم التواصل</small><strong dir="ltr">0533279228</strong></div>
+<div class="detail"><small>الطلبات</small><strong>واتساب أو اتصال</strong></div>
+<div class="detail"><small>الموقع</small><strong>الموقع على خرائط Google</strong></div>
+</div>
+</div>
+<div class="wrap mapline"><span>زورونا — يسعدنا استقبالكم</span><a class="btn ghost" href="https://maps.app.goo.gl/P9NkpVae53yQ9FMH6?g_st=ic" target="_blank" rel="noopener">استكشف موقع المطعم</a></div>
+</section>
+</main>
+<footer>جميع الحقوق محفوظة © 2026</footer>
+</body>
+</html>
